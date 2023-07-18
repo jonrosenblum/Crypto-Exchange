@@ -1,6 +1,9 @@
 import { Outlet } from "react-router";
+
 import Nav from "./static/Nav.jsx";
 import Footer from "./static/Footer.jsx";
+
+
 
 export default function Root() {
   return (
