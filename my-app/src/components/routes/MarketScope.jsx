@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> main
 import CoinDetails from "../pieces/CoinDetails.jsx";
 
 export default function MarketScope() {
