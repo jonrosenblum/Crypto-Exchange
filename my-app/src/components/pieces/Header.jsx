@@ -1,0 +1,30 @@
+import React from "react";
+
+function Header() {
+  return (
+    <header>
+      <h1>Crypto Tracker React Version!</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div className="signup-form">
+        <button>Login</button>
+        <button>Signup</button>
+      </div>
+    </header>
+  );
+}
+
+//HEYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+
+export default Header;
