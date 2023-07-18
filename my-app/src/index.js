@@ -1,17 +1,55 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import "./index.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+import Root from "./components/Root.jsx";
+import Welcome from './components/routes/Welcome.jsx';
+import MarketScope from './components/routes/MarketScope';
+import WaitList from './components/routes/WaitList';
+import WatchList from './components/routes/WatchList';
+import Error from './components/Error';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Root />,
+    errorElement: <Error />,
+    children: [
+      {
+        path: "/",
+        element: <Welcome />
+      },
+      {
+        path: "market-scope",
+        element: <MarketScope />
+      },
+      {
+        path: "watch-list",
+        element: <WatchList />
+      },
+      {
+        path: "wait-list",
+        element: <WaitList />
+      },
+      {
+        path: "policies",
+        element: <h1>Welcome to the Policy Section!</h1>
+      }
+    ]
+  },
+  {
+    path: "/secret",
+    element: <img src="https://image.petmd.com/files/styles/863x625/public/CANS_dogsmiling_379727605.jpg" alt="happy boi"></img>
+  }
+])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

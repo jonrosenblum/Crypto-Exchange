@@ -1,7 +1,7 @@
 // import React, { useEffect, useState } from 'react';
 import CoinDetails from './components/CoinDetails';
 import Header from './components/Header';
-import WatchList from './components/WatchList';
+import WatchList from './components/routes/WatchList';
 import CoinChange from './components/CoinChange';
 import CoinMenu from './components/CoinMenu';
 import { useState, useEffect } from 'react';
