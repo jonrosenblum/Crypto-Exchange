@@ -63,7 +63,7 @@ code {
   font-family: "MuseoModerno";
 }
 
-.coin-menu {
+/* .coin-menu {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -91,4 +91,4 @@ code {
 .coin-name-symbol,
 .coin-price {
   margin: 5px 0;
-}
+} */
