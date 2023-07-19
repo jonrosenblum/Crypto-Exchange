@@ -10,6 +10,7 @@ import MarketScope from './components/routes/MarketScope';
 import WaitList from './components/routes/WaitList';
 import WatchList from './components/routes/WatchList';
 import Error from './components/Error';
+import './index.css';
 
 const fetchAndCurateCoinData = async () => {
   return fetch("https://api.coincap.io/v2/assets")
