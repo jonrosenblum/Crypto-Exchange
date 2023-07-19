@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 
-const CoinChange = ({ cryptoArray }) => {
+export default function CoinChange({ cryptoArray }) {
   const [currentPage, setCurrentPage] = useState(0);
   const coinsPerPage = 10;
 
   const handleCoinClick = (coin) => {
-    // Implement the logic for handling coin click (e.g., showing coin details)
     console.log("Coin clicked:", coin);
   };
 
@@ -64,6 +63,4 @@ const CoinChange = ({ cryptoArray }) => {
       </div>
     </div>
   );
-};
-
-export default CoinChange;
+}
