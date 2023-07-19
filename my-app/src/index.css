@@ -3,12 +3,92 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-style: 1, 900;
+  background-color: black;
+  color: white;
 }
-
 body {
   margin: 0;
+}
+header {
+  display: flex;
+}
+
+h1 {
+  font-family: "MuseoModerno";
+  font-style: 1, 900;
+  font-size: 56px;
+  color: cyan;
+  display: flex;
+}
+
+form {
+  display: flex;
+  float: right;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+form input {
+  width: 60px;
+}
+
+form button {
+  width: 80px;
+  height: 30px;
+  font-size: 16px;
+  border-color: cyan !important;
+  border-radius: 30px;
+  border-style: solid !important;
+  margin: 5px;
+}
+
+nav {
+  display: flex;
+  float: left;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  width: 60%;
+  justify-content: space-between;
+  padding-right: 30px;
+  padding-left: 70px;
+}
+
+nav a {
+  display: flex;
+  text-decoration: none;
+  font-size: 16px;
 }
 
 code {
   font-family: "MuseoModerno";
+}
+
+.coin-menu {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  gap: 10px;
+}
+
+.coin-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.coin-item img {
+  width: 10px;
+  height: 10px;
+}
+
+.coin-name-symbol,
+.coin-price {
+  margin: 5px 0;
 }
