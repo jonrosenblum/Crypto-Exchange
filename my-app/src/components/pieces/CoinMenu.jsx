@@ -32,11 +32,13 @@ export default function CoinMenu({ cryptoArray }) {
 
     const start = currentPage * coinsPerPage;
     const end = start + coinsPerPage;
+    // console.log(cryptoArray);
     const displayedCoins = cryptoArray.slice(start, end);
 
     return displayedCoins.map((coin) => {
-      const { symbol, name, priceUsd } = coin;
-      return createCoinMenuItem(symbol, name, priceUsd);
+      const { symbol, name, priceUsd, imgSource } = coin;
+      // console.log(imgSource);
+      return createCoinMenuItem(symbol, name, priceUsd, imgSource);
     });
   };
 

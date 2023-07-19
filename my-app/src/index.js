@@ -11,11 +11,25 @@ import WaitList from './components/routes/WaitList';
 import WatchList from './components/routes/WatchList';
 import Error from './components/Error';
 
+const fetchAndCurateCoinData = async () => {
+  return fetch("https://api.coincap.io/v2/assets")
+    .then((response) => response.json())
+    .then(cryptoObject => {
+      // const fetchedArray = cryptoObject.data;
+      // console.log(cryptoObject.data)
+      cryptoObject.data.forEach(coin => {
+        coin.imgSource = `/images/${coin.symbol.toLowerCase()}.png`
+      });
+      console.log(cryptoObject.data)
+      return cryptoObject
+    })
+}
+
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
-    errorElement: <Error />,
+    errorElement: <Error />, // It turns out that we need to fix this so it only renders on an actual 404.
     children: [
       {
         path: "/",
@@ -23,7 +37,8 @@ const router = createBrowserRouter([
       },
       {
         path: "market-scope",
-        element: <MarketScope />
+        element: <MarketScope />,
+        loader: fetchAndCurateCoinData
       },
       {
         path: "watch-list",
