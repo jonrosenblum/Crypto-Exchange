@@ -1,9 +1,13 @@
+import { useState } from "react";
+import { useLoaderData } from "react-router-dom";
 import WatchListForm from "../pieces/WatchListForm";
 
-export default function WatchList({ cryptoArray }) {
+export default function WatchList() {
+  const [cryptoObject, setCryptoObject] = useState(useLoaderData());
+
   return (
     <div>
-      <WatchListForm />
+      <WatchListForm cryptoArray={cryptoObject.data} />
     </div>
   );
 }

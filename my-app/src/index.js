@@ -44,7 +44,8 @@ const router = createBrowserRouter([
       },
       {
         path: "watch-list",
-        element: <WatchList />
+        element: <WatchList />,
+        loader: fetchAndCurateCoinData
       },
       {
         path: "wait-list",

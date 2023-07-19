@@ -1,10 +1,14 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+
 import Nav from "./Nav.jsx";
 
 function Header() {
   return (
     <header>
-      <h1>Cryptox</h1>
+      <NavLink to="/">
+        <h1>Cryptox</h1>
+      </NavLink>
       <Nav />
       <form>
         <input type="text" placeholder="Username" />

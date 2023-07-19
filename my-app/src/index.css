@@ -2,17 +2,16 @@
   font-family: "MuseoModerno";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
   font-style: 1, 900;
   background-color: black;
   color: white;
 }
 
-
 body {
   margin-left: 40px;
   margin-right: 40px;
 }
-
 
 header {
   display: flex;
@@ -20,31 +19,31 @@ header {
 
 h1 {
   font-family: "MuseoModerno";
-  font-style: 1,900;
+  font-style: 1, 900;
   font-size: 56px;
   color: cyan;
   display: flex;
 }
 
 form {
-  display:flex;
-  float:right;
+  display: flex;
+  /* float: right; */
   padding-top: 70px;
   padding-bottom: 70px;
 }
 
-form input{
+form input {
   width: 60px;
 }
 
-form button{
+form button {
   width: 80px;
   height: 30px;
   font-size: 16px;
   border-color: cyan !important;
   border-radius: 30px;
   border-style: solid !important;
-  margin:5px;
+  margin: 5px;
 }
 
 nav {
@@ -52,32 +51,38 @@ nav {
   float: left;
   padding-top: 80px;
   padding-bottom: 80px;
-  width:60%;
+  width: 60%;
   justify-content: space-between;
   padding-right: 30px;
-  Padding-left:70px;
+  padding-left: 70px;
 }
-
 
 nav a {
   display: flex;
   text-decoration: none;
   font-size: 16px;
 }
-  
 
 code {
   font-family: "MuseoModerno";
 }
 
-.main-graphic{
-  display: flex;
-  float: right;
-  height: 300px;
-  width: 300px;
+ul.coin-list {
+  display: inline-flex;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
 }
 
-.main-graphic img{
-  height: 300px;
-  width: 300px;
+.coin-menu {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+#coin-change-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
 }

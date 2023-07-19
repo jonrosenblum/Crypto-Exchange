@@ -57,11 +57,11 @@ export default function CoinMenu({ cryptoArray }) {
 
   return (
     <div className="coin-menu">
+      <button onClick={handlePreviousPage} disabled={currentPage === 0}>
+        Previous
+      </button>
       <ul className="coin-list">{renderCoinMenuItems()}</ul>
       <div className="pagination-buttons">
-        <button onClick={handlePreviousPage} disabled={currentPage === 0}>
-          Previous
-        </button>
         <button
           onClick={handleNextPage}
           disabled={

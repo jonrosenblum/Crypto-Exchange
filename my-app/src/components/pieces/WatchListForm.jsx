@@ -36,10 +36,10 @@ const WatchListForm = ({ cryptoArray }) => {
     }
   };
 
-  if (!cryptoArray || cryptoArray.length === 0) {
-    // Return null or a loading message while the data is being fetched
-    return <p>Loading...</p>;
-  }
+  //   if (!cryptoArray || cryptoArray.length === 0) {
+  //     // Return null or a loading message while the data is being fetched
+  //     return <p>Loading...</p>;
+  //   }
 
   return (
     <div className="watchlist-container">
