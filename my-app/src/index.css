@@ -69,3 +69,15 @@ nav a {
 code {
   font-family: "MuseoModerno";
 }
+
+.main-graphic{
+  display: flex;
+  float: right;
+  height: 300px;
+  width: 300px;
+}
+
+.main-graphic img{
+  height: 300px;
+  width: 300px;
+}
