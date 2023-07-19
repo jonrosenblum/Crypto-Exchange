@@ -11,7 +11,7 @@ import WaitList from './components/routes/WaitList';
 import WatchList from './components/routes/WatchList';
 import Error from './components/Error';
 import './index.css';
-<<<<<<< HEAD
+
 
 const fetchAndCurateCoinData = async () => {
   return fetch("https://api.coincap.io/v2/assets")
@@ -26,8 +26,6 @@ const fetchAndCurateCoinData = async () => {
       return cryptoObject
     })
 }
-=======
->>>>>>> develop/victor
 
 const router = createBrowserRouter([
   {
