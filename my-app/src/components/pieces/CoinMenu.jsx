@@ -26,6 +26,10 @@ export default function CoinMenu({ cryptoArray }) {
   };
 
   const renderCoinMenuItems = () => {
+    if (!cryptoArray) {
+      return null; // Return null or a loading message while the data is being fetched
+    }
+
     const start = currentPage * coinsPerPage;
     const end = start + coinsPerPage;
     const displayedCoins = cryptoArray.slice(start, end);
