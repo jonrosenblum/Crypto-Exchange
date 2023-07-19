@@ -1,11 +1,12 @@
 import React from "react";
+import Nav from "./Nav.jsx";
 
 function Header() {
   return (
     <header>
       <h1>Cryptox</h1>
+      <Nav />
       <form>
-        <p>Are you ready? Loading....</p>
         <input type="text" placeholder="Username" />
         <input type="password" placeholder="Password" />
         <button type="submit">Sign Up</button>

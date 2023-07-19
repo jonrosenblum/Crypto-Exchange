@@ -3,14 +3,68 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-style: 1,900;
+  background-color: black;
+  color: white;
+  
 }
 
 
 body {
-  margin: 0;
-
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
+header {
+  display: flex;
+}
+
+h1 {
+  font-family: "MuseoModerno";
+  font-style: 1,900;
+  font-size: 56px;
+  color: cyan;
+  display: flex;
+}
+
+form {
+  display:flex;
+  float:right;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+form input{
+  width: 60px;
+}
+
+form button{
+  width: 80px;
+  height: 30px;
+  font-size: 16px;
+  border-color: cyan !important;
+  border-radius: 30px;
+  border-style: solid !important;
+  margin:5px;
+}
+
+nav {
+  display: flex;
+  float: left;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  width:60%;
+  justify-content: space-between;
+  padding-right: 30px;
+  Padding-left:70px;
+}
+
+
+nav a {
+  display: flex;
+  text-decoration: none;
+  font-size: 16px;
+}
+  
 
 code {
   font-family: "MuseoModerno";
