@@ -10,6 +10,7 @@ import MarketScope from './components/routes/MarketScope';
 import WaitList from './components/routes/WaitList';
 import WatchList from './components/routes/WatchList';
 import Error from './components/Error';
+import Account from './components/pieces/Account';
 import './index.css';
 
 
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
         path: "watch-list",
         element: <WatchList />,
         loader: fetchAndCurateCoinData
+      },
+      {
+        path: "account",
+        element: <Account />
       },
       {
         path: "wait-list",
