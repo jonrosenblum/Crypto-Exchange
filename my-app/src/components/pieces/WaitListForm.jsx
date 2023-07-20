@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 
-const WaitlistForm = () => {
+export default function WaitlistForm() {
   const [email, setEmail] = useState("");
+  const [isSubscribed, setIsSubscribed] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleInputChange = (event) => {
     setEmail(event.target.value);
@@ -9,30 +11,41 @@ const WaitlistForm = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Handle the form submission, e.g., send the email to your backend
-    console.log("Email submitted:", email);
-    // Reset the input field after submission
-    setEmail("");
+    // Simulate form submission delay for demonstration purposes
+    setIsLoading(true);
+    setTimeout(() => {
+      console.log("Email submitted:", email);
+      setIsSubscribed(true);
+      setIsLoading(false);
+    }, 1500);
   };
 
   return (
     <div>
       <h2>Join Our Waitlist</h2>
-      <form onSubmit={handleSubmit}>
-        <label>
-          Enter your email to join:
-          <input
-            type="email"
-            value={email}
-            onChange={handleInputChange}
-            placeholder="Enter your email"
-            required
-          />
-        </label>
-        <button type="submit">Join</button>
-      </form>
+      {isSubscribed ? (
+        <div>
+          <p>Thank you for joining our waitlist!</p>
+          <p>You will receive updates and news about our web application.</p>
+        </div>
+      ) : (
+        <form onSubmit={handleSubmit}>
+          <label>
+            Enter your email to join:
+            <input
+              type="email"
+              value={email}
+              onChange={handleInputChange}
+              placeholder="Enter your email"
+              required
+              disabled={isLoading}
+            />
+          </label>
+          <button type="submit" disabled={isLoading}>
+            {isLoading ? "Joining..." : "Join"}
+          </button>
+        </form>
+      )}
     </div>
   );
-};
-
-export default WaitlistForm;
+}
