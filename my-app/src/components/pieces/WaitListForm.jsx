@@ -1,51 +1,73 @@
 import React, { useState } from "react";
+import "./waitlist.css";
 
-export default function WaitlistForm() {
-  const [email, setEmail] = useState("");
-  const [isSubscribed, setIsSubscribed] = useState(false);
-  const [isLoading, setIsLoading] = useState(false);
+const WaitlistForm = () => {
+  function Form() {
+    const [email, setEmail] = useState("");
+    const [hasSubmitted, setHasSubmitted] = useState(false);
+    const [error, setError] = useState(null);
 
-  const handleInputChange = (event) => {
-    setEmail(event.target.value);
-  };
+    const submit = async (e) => {
+      e.preventDefault();
+      let response = await fetch("/api/waitlist", {
+        method: "POST",
+        body: JSON.stringify({ email: email }),
+      });
+      if (response.ok) {
+        setHasSubmitted(true);
+      } else {
+        setError(await response.text());
+      }
+    };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Simulate form submission delay for demonstration purposes
-    setIsLoading(true);
-    setTimeout(() => {
-      console.log("Email submitted:", email);
-      setIsSubscribed(true);
-      setIsLoading(false);
-    }, 1500);
-  };
+    if (hasSubmitted) {
+      return (
+        <div className="form-wrapper">
+          <span className="subtitle">
+            Thanks for signing up! We will be in touch soon.
+          </span>
+        </div>
+      );
+    }
+
+    return (
+      <form className="form-wrapper" onSubmit={submit}>
+        <input
+          type="email"
+          required
+          placeholder="Email"
+          className="formInput formTextInput"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        <button type="submit" className="formInput formSubmitButton">
+          Join Waitlist
+        </button>
+        {error && <div className="error">{error}</div>}
+      </form>
+    );
+  }
 
   return (
-    <div>
-      <h2>Join Our Waitlist</h2>
-      {isSubscribed ? (
-        <div>
-          <p>Thank you for joining our waitlist!</p>
-          <p>You will receive updates and news about our web application.</p>
+    <div className="container">
+      <div className="column">
+        <img width="154" height="27" src="/logo.svg" alt="Logo" />
+        <h1 className="title">
+          Join Our Waitlist
+          <br />
+        </h1>
+        <div className="subtitle">
+          Be the first to get access to our amazing crypto exchange platform!
+          Sign up now to secure your spot on our waitlist and receive exciting
+          updates and early access privileges.
         </div>
-      ) : (
-        <form onSubmit={handleSubmit}>
-          <label>
-            Enter your email to join:
-            <input
-              type="email"
-              value={email}
-              onChange={handleInputChange}
-              placeholder="Enter your email"
-              required
-              disabled={isLoading}
-            />
-          </label>
-          <button type="submit" disabled={isLoading}>
-            {isLoading ? "Joining..." : "Join"}
-          </button>
-        </form>
-      )}
+        <Form />
+      </div>
+      <div className="column">
+        <img width="100%" height="100%" src="/code.svg" alt="Code" />
+      </div>
     </div>
   );
-}
+};
+
+export default WaitlistForm;
