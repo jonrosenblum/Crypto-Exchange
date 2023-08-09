@@ -1,125 +1,92 @@
-<p align="center">
-    <a href=""><img src="https://img.shields.io/pypi/l/ansicolortags.svg" /></a>
-    <a href=""><img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" /></a>
-    <a href=""><img src="https://badgen.net/github/commits/jonrosenblum/NFL-Analytics-Dashboard" /></a>
-    <br>
-    <a href="https://docs.python.org/3/index.html"><img src="https://img.shields.io/badge/python-%2320232a?style=for-the-badge&logo=python&logoColor=ffdd54" /></a>
-    <a href="https://dash-bootstrap-components.opensource.faculty.ai/"><img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" /></a>
-    <a href="https://plotly.com/dash/"><img src="https://img.shields.io/badge/dash-008DE4?style=for-the-badge&logo=dash&logoColor=white" /></a>
-    <br>
-    <a href=""><img src="https://img.shields.io/badge/Made%20with-Jupyter-orange?style=for-the-badge&logo=Jupyter" /></a>
+# CryptoX Exchange
 
-</p>
+Welcome to **CryptoX**, a sophisticated cryptocurrency exchange built using React that offers a seamless and feature-rich trading experience similar to real-world exchanges. Whether you're a seasoned trader or a newcomer to the world of cryptocurrency, CryptoX has been meticulously designed and developed to cater to all your trading needs.
 
-<p align="center">
-    <img src="screenshot.png" alt="CryptoX Screenshot" width=60%/>
-</p>
-
-<h1 align="center"><b>CryptoX</b></h1>
-<h4 align="center">A user-friendly and secure crypto exchange platform for buying, selling, and trading various cryptocurrencies.</h4>
+![CryptoX Exchange](https://example.com/cryptox_screenshot.png)
 
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [Technical Requirements](#technical-requirements)
-- [Project Structure](#project-structure)
-- [Key Functionalities](#key-functionalities)
+- [Features](#features)
 - [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
 - [Usage](#usage)
-- [Dependencies](#dependencies)
+- [Technologies Used](#technologies-used)
 - [Contributing](#contributing)
 - [License](#license)
 
 ## Introduction
 
-A user-friendly and secure crypto exchange platform for buying, selling, and trading various cryptocurrencies.
+CryptoX is a cutting-edge cryptocurrency exchange platform that provides users with a seamless and intuitive interface for trading a wide range of digital assets. Our goal is to empower both novice and experienced traders with the tools they need to make informed decisions and execute trades with confidence.
 
-## Technical Requirements
+## Features
 
-To run the NFL Player Statistics Dashboard locally, you need the following:
-
-- Python 3.7 or later
-- Dash 1.21.0 or later
-- Plotly 5.0.0 or later
-- Pandas 1.1.0 or later
-
-## Project Directory Hierarchy
-
-Upon successful setup (see **Getting Started**), you should see the following project directory hierarchy.
-
-```
-nfl-player-stats-dashboard/
-├── data/
-│ └── nfl_offensive_stats.csv
-├── notebooks/
-│ └── .ipynb_checkpoints/
-│ │     └── .eda-checkpoints.ipynb
-│ └── nfl-investigative_analysis.ipynb
-├── app.py
-├── OBJECTIVES.md
-├── Pipfile
-└── README.md
-```
-
-- `data/`: Directory containing the dataset `nfl_offensive_stats.csv`.
-- `app.py`: Main application file containing the Dash app code and callbacks.
-- `Pipfile` and `Pipfile.lock`: Files specifying project dependencies when using `pipenv`.
-- `README.md`: Project documentation providing an overview, setup instructions, and other details.
-
-## Key Functionalities
-
-The NFL Player Statistics Dashboard offers the following functionalities:
-
-- Choose a player's position: quarterbacks, running backs, or wide receivers.
-- Select a specific player from the dropdown menu.
-- Choose from various statistics for the selected player using radio items.
-- View bar graphs illustrating the selected player's statistics over different game IDs.
+- **Real-Time Trading**: Experience the thrill of real-time trading with instant order execution and live market data updates.
+- **User-Friendly Interface**: Our intuitive and responsive user interface makes it easy to navigate through various markets and execute trades effortlessly.
+- **Advanced Charting**: Gain deeper insights into market trends using our advanced charting tools, including technical indicators and drawing tools.
+- **Secure Transactions**: Your security is our priority. We implement robust security measures to ensure your transactions and personal information remain protected.
+- **Multi-Currency Support**: Trade a diverse range of cryptocurrencies with support for multiple trading pairs.
+- **Portfolio Tracking**: Monitor your portfolio's performance over time with detailed balance and transaction history.
+- **Customizable Watchlists**: Create and manage personalized watchlists to keep a close eye on your favorite assets.
+- **Order Types**: Choose from various order types, including market, limit, and stop orders, to tailor your trading strategy.
+- **Mobile Responsive**: Trade on the go with our mobile-responsive design that adapts to different screen sizes.
 
 ## Getting Started
 
-1. Clone this repository to your local machine:
+### Prerequisites
 
+Before you begin, ensure you have the following prerequisites:
+
+- [Node.js](https://nodejs.org/) (version XX or higher)
+- [npm](https://www.npmjs.com/) (usually comes with Node.js installation)
+
+### Installation
+
+1. Clone the repository:
 ```bash
 git clone https://github.com/jonrosenblum/Crypto-Exchange.git
 ```
 
 2. Navigate to the project directory:
-
 ```bash
-cd 
+cd crypto-exchange
 ```
 
-3. Install the required dependencies using _____:
-
+3. Install the required dependencies:
 ```bash
------
+npm install
 ```
 
-4. Run the app:
-
+4. Start the development server:
 ```bash
--------
+npm start
 ```
 
-## Usage
+5. Open your web browser and navigate to http://localhost:3000 to access the CryptoX Exchange.
 
-1. Choose a position (Quarterbacks, Running Backs, or Wide Receivers) from the tabs.
-2. Select a player from the dropdown menu.
-3. Use the radio items to choose the desired statistic.
-4. Observe the corresponding bar graph showing the player's statistics.
 
-## Dependencies
+### Technologies Used
 
-The NFL Player Statistics Dashboard relies on the following libraries:
+- React: Front-end user interface library
+- Redux: State management for React applications
+- WebSocket: Real-time data streaming for live market updates
+- Chart.js: Interactive charting library for displaying market data
+- REST API: Backend API for handling user authentication, orders, and transactions
+- CSS Modules: Modular and maintainable styling approach
 
-- Dash: A web application framework for building interactive web applications with Python.
-- Plotly: A graphing library for creating interactive, publication-quality graphs.
-- Pandas: A data manipulation library for data analysis and manipulation.
+### Contributing 
 
-## Contributing
+We welcome contributions from the community! If you'd like to contribute to CryptoX, please follow these steps:
 
-Contributions to the NFL Player Statistics Dashboard are welcome! If you encounter any issues, have feature suggestions, or would like to contribute code, please open an issue or pull request on the GitHub repository.
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them with descriptive commit messages.
+4. Push your changes to your fork.
+5. Submit a pull request detailing your changes.
 
-## License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+### License 
+
+This project is licensed under the MIT License.
+
