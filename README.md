@@ -1,4 +1,17 @@
 <p align="center">
+    <a href=""><img src="https://img.shields.io/pypi/l/ansicolortags.svg" /></a>
+    <a href=""><img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" /></a>
+    <a href=""><img src="https://badgen.net/github/commits/jonrosenblum/NFL-Analytics-Dashboard" /></a>
+    <br>
+    <a href="https://docs.python.org/3/index.html"><img src="https://img.shields.io/badge/python-%2320232a?style=for-the-badge&logo=python&logoColor=ffdd54" /></a>
+    <a href="https://dash-bootstrap-components.opensource.faculty.ai/"><img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" /></a>
+    <a href="https://plotly.com/dash/"><img src="https://img.shields.io/badge/dash-008DE4?style=for-the-badge&logo=dash&logoColor=white" /></a>
+    <br>
+    <a href=""><img src="https://img.shields.io/badge/Made%20with-Jupyter-orange?style=for-the-badge&logo=Jupyter" /></a>
+
+</p>
+
+<p align="center">
     <img src="screenshot.png" alt="CryptoX Screenshot" width=60%/>
 </p>
 
