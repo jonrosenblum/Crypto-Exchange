@@ -1,4 +1,4 @@
-# Cryptox - Crypto Exchange Platform
+# Cryptox
 
 CryptoX is a user-friendly and secure crypto exchange platform that allows users to buy, sell, and trade various cryptocurrencies. The platform provides a seamless and efficient experience for both beginners and experienced traders in the cryptocurrency market.
 
