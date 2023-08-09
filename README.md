@@ -18,47 +18,108 @@
 <h1 align="center"><b>CryptoX</b></h1>
 <h4 align="center">A user-friendly and secure crypto exchange platform for buying, selling, and trading various cryptocurrencies.</h4>
 
-<p align="center">
-    <a href="https://www.cryptox.com"><img src="https://img.shields.io/website-up-down-green-red/https/www.cryptox.com.svg" /></a>
-    <a href="LICENSE"><img src="https://img.shields.io/github/license/[yourusername]/cryptox" /></a>
-    <a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat" /></a>
-</p>
+## Table of Contents
 
-## Features
+- [Introduction](#introduction)
+- [Technical Requirements](#technical-requirements)
+- [Project Structure](#project-structure)
+- [Key Functionalities](#key-functionalities)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Dependencies](#dependencies)
+- [Contributing](#contributing)
+- [License](#license)
 
-- **User-friendly Interface**: Enjoy an intuitive and easy-to-navigate platform for managing crypto transactions.
+## Introduction
 
-- **Wide Range of Cryptocurrencies**: Access a diverse selection of cryptocurrencies, including Bitcoin, Ethereum, and more.
+A user-friendly and secure crypto exchange platform for buying, selling, and trading various cryptocurrencies.
 
-- **Secure Transactions**: Your digital assets and personal information are safeguarded through robust security measures.
+## Technical Requirements
 
-- **Real-time Market Data**: Stay updated with real-time market data, including price changes and trading volumes.
+To run the NFL Player Statistics Dashboard locally, you need the following:
 
-- **Order Book and Trade History**: Make informed trading decisions by exploring detailed order book and trade history.
+- Python 3.7 or later
+- Dash 1.21.0 or later
+- Plotly 5.0.0 or later
+- Pandas 1.1.0 or later
 
-- **Responsive Design**: Experience a seamless interface across various devices and screen sizes.
+## Project Directory Hierarchy
+
+Upon successful setup (see **Getting Started**), you should see the following project directory hierarchy.
+
+```
+nfl-player-stats-dashboard/
+├── data/
+│ └── nfl_offensive_stats.csv
+├── notebooks/
+│ └── .ipynb_checkpoints/
+│ │     └── .eda-checkpoints.ipynb
+│ └── nfl-investigative_analysis.ipynb
+├── app.py
+├── OBJECTIVES.md
+├── Pipfile
+└── README.md
+```
+
+- `data/`: Directory containing the dataset `nfl_offensive_stats.csv`.
+- `app.py`: Main application file containing the Dash app code and callbacks.
+- `Pipfile` and `Pipfile.lock`: Files specifying project dependencies when using `pipenv`.
+- `README.md`: Project documentation providing an overview, setup instructions, and other details.
+
+## Key Functionalities
+
+The NFL Player Statistics Dashboard offers the following functionalities:
+
+- Choose a player's position: quarterbacks, running backs, or wide receivers.
+- Select a specific player from the dropdown menu.
+- Choose from various statistics for the selected player using radio items.
+- View bar graphs illustrating the selected player's statistics over different game IDs.
 
 ## Getting Started
 
-To run CryptoX locally, follow these steps:
+1. Clone this repository to your local machine:
 
-1. Clone the repository:
-2. Install dependencies:
-3. Start the development server:
-4. Open your web browser and visit `http://localhost:3000` to access CryptoX.
+```bash
+git clone https://github.com/jonrosenblum/Crypto-Exchange.git
+```
 
-## Technologies Used
+2. Navigate to the project directory:
 
-- React: Frontend framework for building user interfaces.
+```bash
+cd 
+```
+
+3. Install the required dependencies using _____:
+
+```bash
+-----
+```
+
+4. Run the app:
+
+```bash
+-------
+```
+
+## Usage
+
+1. Choose a position (Quarterbacks, Running Backs, or Wide Receivers) from the tabs.
+2. Select a player from the dropdown menu.
+3. Use the radio items to choose the desired statistic.
+4. Observe the corresponding bar graph showing the player's statistics.
+
+## Dependencies
+
+The NFL Player Statistics Dashboard relies on the following libraries:
+
+- Dash: A web application framework for building interactive web applications with Python.
+- Plotly: A graphing library for creating interactive, publication-quality graphs.
+- Pandas: A data manipulation library for data analysis and manipulation.
 
 ## Contributing
 
-Contributions to CryptoX are welcome! If you find bugs or have feature suggestions, please open an issue or submit a pull request. Read our [contribution guidelines](CONTRIBUTING.md) before contributing.
+Contributions to the NFL Player Statistics Dashboard are welcome! If you encounter any issues, have feature suggestions, or would like to contribute code, please open an issue or pull request on the GitHub repository.
 
 ## License
 
-CryptoX is open-source and distributed under the [MIT License](LICENSE).
-
-## Contact
-
-For inquiries or support, contact our team at support@cryptox.com or visit our website [www.cryptox.com](https://www.cryptox.com).
+This project is licensed under the MIT License. See the LICENSE file for details.
