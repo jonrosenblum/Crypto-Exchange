@@ -32,16 +32,16 @@
 
 ## Introduction
 
-CrptoX is a
+CryptoX is a cutting-edge cryptocurrency exchange platform that provides users with a seamless and intuitive interface for trading a wide range of digital assets. Our goal is to empower both novice and experienced traders with the tools they need to make informed decisions and execute trades with confidence.
 
 ## Technical Requirements
 
 To run CryptoX locally, you need the following:
 
-- Python 3.7 or later
-- Dash 1.21.0 or later
-- Plotly 5.0.0 or later
-- Pandas 1.1.0 or later
+-
+-
+-
+-
 
 ## Project Directory Hierarchy
 
@@ -62,11 +62,15 @@ Upon successful setup (see **Getting Started**), you should see the following pr
 
 CryptoX offers the following functionalities:
 
--
--
--
--
--
+- **Secure Trading:** Trade with confidence knowing that CryptoX employs state-of-the-art security measures to protect your digital assets and personal information.
+
+- **Real-Time Market Data:** Stay up-to-date with real-time market data, including price charts, trading volumes, and historical data, to make informed trading decisions.
+
+- **Wide Range of Cryptocurrencies:** CryptoX supports a diverse selection of cryptocurrencies, allowing you to trade popular options like Bitcoin and Ethereum, as well as various altcoins.
+
+- **User-Friendly Interface:** The intuitive and user-friendly interface of CryptoX makes it easy for traders of all levels to navigate the platform and execute trades effortlessly.
+
+- **Advanced Trading Tools:** Utilize advanced trading tools such as limit orders, stop-loss orders, and market orders to execute trades with precision.
 
 ### Getting Started
 
@@ -79,7 +83,7 @@ git clone https://github.com/jonrosenblum/Crypto-Exchange.git
 2. Navigate to the project directory:
 
 ```bash
-cd crypto-exchange
+cd my-app
 ```
 
 3. Install the required dependencies:
@@ -98,20 +102,21 @@ npm start
 
 ## Usage
 
-1.
-2.
-3.
-4.
-5.
+1. Sign Up or Log In: Create an account or log in if you're an existing user.
+2. Explore Cryptocurrencies: Browse the wide range of supported cryptocurrencies and review their market data.
+3. Execute Trades: Use the trading interface to place market or limit orders based on your trading strategy.
+4. Monitor Portfolio: Keep track of your portfolio's performance using the portfolio dashboard.
+5. Stay Informed: Access real-time market data, news, and trends to make informed decisions.
 
 ## Dependencies
 
 CryptoX relies on the following libraries:
 
--
--
--
--
+- React: A popular JavaScript library for building user interfaces.
+- Redux: A state management library for managing global application state.
+- React Router: A library for handling routing in a React application.
+- Chart.js: A charting library for creating interactive and visually appealing charts.
+- Axios: A promise-based HTTP client for making API requests.
 
 ## Contributing
 
