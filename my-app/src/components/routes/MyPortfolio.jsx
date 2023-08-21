@@ -1,4 +1,4 @@
-import MyPortfolio from "../pieces/BuySell.jsx";
+import MyPortfolio from "../pieces/MyPortfolio.jsx";
 
 export default function MyPortfolio() {
   return (
