@@ -10,9 +10,8 @@ import MarketScope from './components/routes/MarketScope';
 import WaitList from './components/routes/WaitList';
 import WatchList from './components/routes/WatchList';
 import Error from './components/Error';
-import Account from './components/pieces/Account';
 import './index.css';
-import BuyAndSell from './components/routes/BuyAndSell';
+import MyPortfolio from './components/pieces/MyPortfolio';
 
 
 const fetchAndCurateCoinData = async () => {
@@ -49,10 +48,9 @@ const router = createBrowserRouter([
         element: <WatchList />,
         loader: fetchAndCurateCoinData
       },
-      { path: "buy-sell", element: <BuyAndSell /> },
       {
-        path: "account",
-        element: <Account />
+        path: "my-portfolio",
+        element: <MyPortfolio />
       },
       {
         path: "wait-list",
