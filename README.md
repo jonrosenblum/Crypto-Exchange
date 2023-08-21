@@ -130,6 +130,15 @@ npm start
 ## Dependencies
 
 CryptoX relies on the following libraries:
+1. React
+2. React Router
+3. Redux
+4. Chart.js
+5. Fetch
+6. react-toastify
+7. React Icons
+8. Firebase
+9. moment.js
 
 ## Contributing
 
