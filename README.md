@@ -32,7 +32,7 @@
 
 ## Introduction
 
-CryptoX is a cutting-edge cryptocurrency exchange platform that provides users with a seamless and intuitive interface for trading a wide range of digital assets. Our goal is to empower both novice and experienced traders with the tools they need to make informed decisions and execute trades with confidence.
+CryptoX is a cutting-edge cryptocurrency tracker platform that provides users with a seamless and intuitive interface for tracking a wide range of digital assets. Our goal is to empower both novice and experienced traders with the tools they need to make informed decisions and execute trades with confidence.
 
 ## Technical Requirements
 
@@ -62,15 +62,35 @@ Upon successful setup (see **Getting Started**), you should see the following pr
 
 CryptoX offers the following functionalities:
 
-- **Secure Trading:** Trade with confidence knowing that CryptoX employs state-of-the-art security measures to protect your digital assets and personal information.
+**Portfolio Management:**
 
-- **Real-Time Market Data:** Stay up-to-date with real-time market data, including price charts, trading volumes, and historical data, to make informed trading decisions.
+- Enable users to add, edit, and remove cryptocurrencies from their portfolio.
+- Display real-time value of their holdings based on current cryptocurrency prices.
 
-- **Wide Range of Cryptocurrencies:** CryptoX supports a diverse selection of cryptocurrencies, allowing you to trade popular options like Bitcoin and Ethereum, as well as various altcoins.
+**Transaction Tracking:**
 
-- **User-Friendly Interface:** The intuitive and user-friendly interface of CryptoX makes it easy for traders of all levels to navigate the platform and execute trades effortlessly.
+- Allow users to record buy, sell, and transfer transactions for accurate portfolio performance tracking.
+- Calculate and display gains and losses for each transaction.
 
-- **Advanced Trading Tools:** Utilize advanced trading tools such as limit orders, stop-loss orders, and market orders to execute trades with precision.
+**Real-time Data Updates:**
+
+- Integrate with cryptocurrency APIs for real-time price updates.
+- Reflect changes in cryptocurrency prices instantly across the portfolio.
+
+**Market Analysis:**
+
+- Provide detailed information for each cryptocurrency, including price charts and historical data.
+- Allow users to perform basic technical analysis using charts and indicators.
+
+**Alerts and Notifications:**
+
+- Enable users to set price alerts for specific cryptocurrencies.
+- Notify users when cryptocurrency prices meet their specified thresholds.
+
+**User-Friendly Interface:**
+
+- Design an intuitive and responsive UI for easy navigation on various devices.
+- Ensure a seamless user experience when managing their portfolio and transactions.
 
 ### Getting Started
 
@@ -104,19 +124,12 @@ npm start
 
 1. Sign Up or Log In: Create an account or log in if you're an existing user.
 2. Explore Cryptocurrencies: Browse the wide range of supported cryptocurrencies and review their market data.
-3. Execute Trades: Use the trading interface to place market or limit orders based on your trading strategy.
-4. Monitor Portfolio: Keep track of your portfolio's performance using the portfolio dashboard.
-5. Stay Informed: Access real-time market data, news, and trends to make informed decisions.
+3. Monitor Portfolio: Keep track of your portfolio's performance using the portfolio dashboard.
+4. Stay Informed: Access real-time market data, news, and trends to make informed decisions.
 
 ## Dependencies
 
 CryptoX relies on the following libraries:
-
-- React: A popular JavaScript library for building user interfaces.
-- Redux: A state management library for managing global application state.
-- React Router: A library for handling routing in a React application.
-- Chart.js: A charting library for creating interactive and visually appealing charts.
-- Axios: A promise-based HTTP client for making API requests.
 
 ## Contributing
 
