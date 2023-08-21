@@ -122,10 +122,10 @@ npm start
 
 ## Usage
 
-1. Sign Up or Log In: Create an account or log in if you're an existing user.
-2. Explore Cryptocurrencies: Browse the wide range of supported cryptocurrencies and review their market data.
-3. Monitor Portfolio: Keep track of your portfolio's performance using the portfolio dashboard.
-4. Stay Informed: Access real-time market data, news, and trends to make informed decisions.
+1. **Sign Up or Log In:** Create an account or log in if you're an existing user.
+2. **Explore Cryptocurrencies:** Browse the wide range of supported cryptocurrencies and review their market data.
+3. **Monitor Portfolio:** Keep track of your portfolio's performance using the portfolio dashboard.
+4. **Stay Informed:** Access real-time market data, news, and trends to make informed decisions.
 
 ## Dependencies
 
