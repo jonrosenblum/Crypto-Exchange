@@ -9,9 +9,9 @@
 <h1 align="center"><b>CryptoX</b></h1>
 <h4 align="center">A sophisticated cyyptocurrency portfolio tracker and asset management platform.</h4>
 
-<p align="center">
+<!-- <p align="center">
     <img src="" alt="Project Logo" width=60% height=60%/>
-</p>
+</p> -->
 
 ## Table of Contents
 
