@@ -8,7 +8,6 @@ import MarketScope from './routes/MarketScope';
 import WaitList from './routes/WaitList';
 import WatchList from './routes/WatchList';
 import Error from './components/Layout/Error';
-import MyPortfolio from './routes/MyPortfolio';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import './index.css';
@@ -18,8 +17,6 @@ const fetchAndCurateCoinData = async () => {
   return fetch("https://api.coincap.io/v2/assets")
     .then((response) => response.json())
     .then(cryptoObject => {
-      // const fetchedArray = cryptoObject.data;
-      // console.log(cryptoObject.data)
       cryptoObject.data.forEach(coin => {
         coin.imgSource = `/images/${coin.symbol.toLowerCase()}.png`
       });
@@ -49,22 +46,10 @@ const router = createBrowserRouter([
         loader: fetchAndCurateCoinData
       },
       {
-        path: "my-portfolio",
-        element: <MyPortfolio />
-      },
-      {
         path: "wait-list",
         element: <WaitList />
-      },
-      {
-        path: "policies",
-        element: <h1>Welcome to the Policy Section!</h1>
       }
     ]
-  },
-  {
-    path: "/secret",
-    element: <img src="https://image.petmd.com/files/styles/863x625/public/CANS_dogsmiling_379727605.jpg" alt="happy boi"></img>
   }
 ])
 
