@@ -14,10 +14,7 @@ export default function Nav() {
           <NavLink to="watch-list" className="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg: lg:group-hover: lg:group-hover:opacity-70">My Watchlist</NavLink>
         </li>
         <li className="group relative">
-          <NavLink to="my-portfolio" className="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg: lg:group-hover: lg:group-hover:opacity-70">My Portfolio</NavLink>
-        </li>
-        <li className="group relative">
-          <NavLink to="wait-list" className="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg: lg:group-hover: lg:group-hover:opacity-70">Join Waitlist!</NavLink>
+          <NavLink to="wait-list" className="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg: lg:group-hover: lg:group-hover:opacity-70">Join Waitlist</NavLink>
         </li>
       </ul>
     </nav>
