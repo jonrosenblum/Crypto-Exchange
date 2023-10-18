@@ -1,22 +1,61 @@
-import { NavLink } from "react-router-dom";
+import React, { useState } from 'react';
+import {
+  MDBContainer,
+  MDBNavbar,
+  MDBNavbarBrand,
+  MDBNavbarToggler,
+  MDBIcon,
+  MDBNavbarNav,
+  MDBNavbarItem,
+  MDBNavbarLink,
+  MDBBtn,
+  MDBDropdown,
+  MDBDropdownToggle,
+  MDBDropdownMenu,
+  MDBDropdownItem,
+  MDBCollapse,
+} from 'mdb-react-ui-kit';
 
 export default function Nav() {
+  const [showBasic, setShowBasic] = useState(false);
+
   return (
-    <nav
-      id="navbarCollapse"
-      className="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:py-0 lg:px-4 lg:shadow-none xl:px-6"
-    >
-      <ul className="blcok lg:flex">
-        <li className="group relative">
-          <NavLink to="market-scope" className="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg: lg:group-hover: lg:group-hover:opacity-70">Market Scope</NavLink>
-        </li>
-        <li className="group relative">
-          <NavLink to="watch-list" className="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg: lg:group-hover: lg:group-hover:opacity-70">My Watchlist</NavLink>
-        </li>
-        <li className="group relative">
-          <NavLink to="wait-list" className="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg: lg:group-hover: lg:group-hover:opacity-70">Join Waitlist</NavLink>
-        </li>
-      </ul>
-    </nav>
+    <MDBNavbar expand='lg' light bgColor='light'>
+      <MDBContainer fluid>
+        <MDBNavbarBrand href='/'>CryptoX</MDBNavbarBrand>
+
+        <MDBNavbarToggler
+          aria-controls='navbarSupportedContent'
+          aria-expanded='false'
+          aria-label='Toggle navigation'
+          onClick={() => setShowBasic(!showBasic)}
+        >
+          <MDBIcon icon='bars' fas />
+        </MDBNavbarToggler>
+
+        <MDBCollapse navbar show={showBasic}>
+          <MDBNavbarNav className='mr-auto mb-2 mb-lg-0'>
+            <MDBNavbarItem>
+              <MDBNavbarLink href='/market-scope'>Market Scope</MDBNavbarLink>
+            </MDBNavbarItem>
+
+            <MDBNavbarItem>
+              <MDBNavbarLink href='/watch-list'>Watchlist</MDBNavbarLink>
+            </MDBNavbarItem>
+
+            <MDBNavbarItem>
+              <MDBNavbarLink href='wait-list'>Join Waitlist</MDBNavbarLink>
+            </MDBNavbarItem>
+          </MDBNavbarNav>
+
+          <form className='d-flex input-group w-auto'>
+          <input type='email' className='form-control' placeholder='email' aria-label='' />
+            <input type='password' className='form-control' placeholder='password' aria-label='' />
+            <MDBBtn color='primary'>Sign Up</MDBBtn>
+            <MDBBtn color='primary'>Log In</MDBBtn>
+          </form>
+        </MDBCollapse>
+      </MDBContainer>
+    </MDBNavbar>
   );
 }
