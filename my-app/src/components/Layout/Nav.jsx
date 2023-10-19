@@ -10,10 +10,6 @@ import {
   MDBNavbarLink,
   MDBBtn,
   MDBInputGroup,
-  MDBDropdown,
-  MDBDropdownToggle,
-  MDBDropdownMenu,
-  MDBDropdownItem,
   MDBCollapse,
 } from 'mdb-react-ui-kit';
 
@@ -93,14 +89,10 @@ export default function Nav() {
                 aria-label='Password'
               />
             </MDBInputGroup>
-
-            <MDBBtn color='primary' onClick={handleSignUp}>
-              Sign Up
-            </MDBBtn>
-            <div className='ms-2' />
-            <MDBBtn color='primary' onClick={handleLogIn}>
-              Log In
-            </MDBBtn>
+            <div className=''>
+              <MDBBtn rounded onClick={handleSignUp}>Sign Up</MDBBtn>
+              <MDBBtn rounded onClick={handleLogIn}>Login</MDBBtn>
+            </div>
           </form>
         </MDBCollapse>
       </MDBContainer>
