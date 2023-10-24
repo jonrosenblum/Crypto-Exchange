@@ -29,13 +29,9 @@ CryptoX is a dynamic web application meticulously crafted using React. This user
 
 2. **Personalized Coin Wishlist**: Tailor your crypto experience with CryptoX's personalized coin wishlist feature. Users can easily select their favorite cryptocurrencies and add them to their wishlist for quick access. Whether you're a Bitcoin maximalist or an altcoin aficionado, CryptoX keeps your chosen coins at your fingertips.
 
-3. **External Portfolio Sync**: CryptoX takes the hassle out of portfolio management by allowing users to sync their external crypto portfolios. By integrating with popular exchanges and wallet platforms, users can seamlessly import their holdings and gain valuable insights into their trading history and performance.
+3. **User-Friendly Interface**: CryptoX boasts a user-friendly and intuitive interface designed to simplify the crypto tracking experience. Access real-time data, manage your wishlist, and review your portfolio effortlessly, even if you're new to the world of cryptocurrencies.
 
-4. **Trade Insights and History**: Dive deeper into your crypto trading journey with CryptoX. Gain access to comprehensive trade insights and history, including buy and sell transactions, profit and loss calculations, and portfolio performance analysis. Make more informed trading decisions with historical data at your disposal.
-
-5. **User-Friendly Interface**: CryptoX boasts a user-friendly and intuitive interface designed to simplify the crypto tracking experience. Access real-time data, manage your wishlist, and review your portfolio effortlessly, even if you're new to the world of cryptocurrencies.
-
-6. **Privacy and Security**: Your crypto assets are important, and CryptoX prioritizes user privacy and data security. Your portfolio information is handled with the utmost confidentiality, providing a safe and secure environment for all your crypto-related activities.
+4. **Privacy and Security**: Your crypto assets are important, and CryptoX prioritizes user privacy and data security. Your portfolio information is handled with the utmost confidentiality, providing a safe and secure environment for all your crypto-related activities.
 
 ## License
 
